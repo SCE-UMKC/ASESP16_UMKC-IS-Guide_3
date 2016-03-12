@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="6dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="6dp"
+    android:background="@drawable/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mnpw3d.umkcis_guide.PostDepartureActivity"
+    tools:showIn="@layout/activity_post_departure">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ADFFFFFF"
+        >
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentTop="true"
+            android:text="Post Departure"
+            android:textSize="35dp"
+            android:textAllCaps="true"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
+            android:textColor="#DD4668c7"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quick Start"
+            android:id="@+id/quick_start"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:background="#DD4668c7"
+            android:onClick="quickstart"
+            android:textColor="#ffffff"
+            android:ems = "15"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Selection"
+            android:id="@+id/course_selection"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/quick_start"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#DD4668c7"
+            android:textColor="#ffffff"
+            android:onClick="course"
+            android:ems = "15"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accommodation"
+            android:id="@+id/accommodation"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/course_selection"
+            android:layout_centerHorizontal="true"
+            android:background="#DD4668c7"
+            android:textColor="#ffffff"
+            android:onClick="accomodation"
+            android:ems = "15"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

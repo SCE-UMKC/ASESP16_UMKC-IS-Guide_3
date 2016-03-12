@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mnpw3d.umkcis_guide">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,6 +23,22 @@
         <activity
             android:name=".registerActivity"
             android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PostDepartureActivity"
+            android:label="@string/title_activity_post_departure"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QuickStartActivity"
+            android:label="@string/title_activity_quick_start"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AccommodationActivity"
+            android:label="@string/title_activity_accommodation"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

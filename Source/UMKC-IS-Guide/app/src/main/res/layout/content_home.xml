@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="6dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="6dp"
+    android:background="@drawable/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mnpw3d.umkcis_guide.HomeActivity"
+    tools:showIn="@layout/activity_home">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ADFFFFFF"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exams Guidelines"
+            android:id="@+id/button"
+            android:layout_marginTop="60dp"
+            android:onClick="exam"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#DD4668c7"
+            android:textColor="#ffffff"
+            android:ems = "15"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="University Application"
+            android:id="@+id/button2"
+            android:layout_below="@+id/button"
+            android:layout_centerHorizontal="true"
+            android:background="#DD4668c7"
+            android:textColor="#ffffff"
+            android:onClick="university"
+            android:layout_marginTop="15dp"
+            android:ems = "15"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visa Procedure"
+            android:id="@+id/button3"
+            android:layout_below="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:background="#DD4668c7"
+            android:textColor="#ffffff"
+            android:onClick="visa"
+            android:layout_marginTop="15dp"
+            android:ems = "15"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pre-Departure"
+            android:onClick="predeparture"
+            android:id="@+id/button4"
+            android:background="#DD4668c7"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/button3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:ems = "15"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post-Departure"
+            android:onClick="postdeparture"
+            android:id="@+id/button5"
+            android:background="#DD4668c7"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/button4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:ems = "15"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Posts"
+            android:id="@+id/button6"
+            android:background="#DD4668c7"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/button5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:ems = "15"/>
+
+    </RelativeLayout>
+</RelativeLayout>
