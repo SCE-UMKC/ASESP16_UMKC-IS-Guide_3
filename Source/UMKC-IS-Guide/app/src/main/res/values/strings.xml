@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UMKC IS-Guide</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_register">registerActivity</string>
+    <string name="title_activity_examination">ExaminationActivity</string>
+    <string name="title_activity_gre">GREActivity</string>
+    <string name="title_activity_toefl">TOEFLActivity</string>
+    <string name="title_activity_ielts">IELTSActivity</string>
+</resources>

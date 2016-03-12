@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="6dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="6dp"
+    android:background="@drawable/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mnpw3d.umkcis_guide.ExaminationActivity"
+    tools:showIn="@layout/activity_examination">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ADFFFFFF"
+        >
+
+        <TextView
+            android:id="@+id/examtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentTop="true"
+            android:text="EXAMINATIONS"
+            android:textSize="35dp"
+            android:textAllCaps="true"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
+            android:textColor="#DD4668c7"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GRE"
+            android:id="@+id/gre"
+            android:layout_marginTop="30dp"
+            android:background="#DD4668c7"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/examtv"
+            android:ems = "15"
+            android:layout_centerHorizontal="true"
+            android:onClick="grefn"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOEFL"
+            android:id="@+id/toefl"
+            android:background="#DD4668c7"
+            android:textColor="#ffffff"
+            android:ems = "15"
+            android:layout_below="@+id/gre"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="toeflfn"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IELTS"
+            android:id="@+id/ielts"
+            android:background="#DD4668c7"
+            android:textColor="#ffffff"
+            android:ems = "15"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/toefl"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="ieltsfn"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESOURCES"
+            android:id="@+id/resources"
+            android:background="#DD4668c7"
+            android:textColor="#ffffff"
+            android:ems = "15"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/ielts"
+            android:layout_marginTop="30dp"
+            android:onClick="resourcesfn"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>
