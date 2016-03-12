@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">UMKC IS-Guide</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_register">registerActivity</string>
+    <string name="title_activity_visa">Visa</string>
+    <string name="title_activity_pre_departure">PreDeparture</string>
+    <string name="title_activity_flight">Flight</string>
+    <string name="title_activity_shopping_list">ShoppingList</string>
+    <string name="title_activity_fees_detail">FeesDetail</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mnpw3d.umkcis_guide">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".registerActivity"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Visa"
+            android:label="@string/title_activity_visa"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PreDeparture"
+            android:label="@string/title_activity_pre_departure"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Flight"
+            android:label="@string/title_activity_flight"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ShoppingList"
+            android:label="@string/title_activity_shopping_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FeesDetail"
+            android:label="@string/title_activity_fees_detail"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

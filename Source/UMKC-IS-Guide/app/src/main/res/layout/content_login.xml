@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="6dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="6dp"
+    android:background="@drawable/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mnpw3d.umkcis_guide.LoginActivity"
+    tools:showIn="@layout/activity_login">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DDDDDDFF"
+        >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Username"
+        android:textColor="#4668c7"
+        android:ems="14"
+        android:id="@+id/username"
+        android:layout_alignTop="@+id/usericon"
+        android:layout_toRightOf="@+id/usericon"
+        android:layout_toEndOf="@+id/usericon"
+        android:layout_marginLeft="5dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColor="#4668c7"
+        android:hint="Password"
+        android:ems="14"
+        android:id="@+id/password"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/username"
+        android:layout_alignTop="@+id/usericon"
+        android:layout_toRightOf="@+id/usericon"
+        android:layout_toEndOf="@+id/usericon"
+        android:layout_marginLeft="5dp"
+       />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:background="#4668c7"
+        android:id="@+id/login"
+        android:textColor="#ffffff"
+        android:onClick="login"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/password"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_toLeftOf="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:background="#DDDDDDFF"
+        android:textColor="#4668c7"
+        android:id="@+id/register"
+        android:layout_below="@+id/password"
+        android:layout_alignTop="@+id/login"
+        android:layout_alignRight="@+id/password"
+        android:layout_alignEnd="@+id/password"
+        android:layout_toEndOf="@+id/twitter"
+        android:layout_toRightOf="@+id/twitter"
+        android:onClick="register"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:id="@+id/textView"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/twitter"
+        android:src="@drawable/twitter"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/facebook"
+        android:src="@drawable/facebook1"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/login"
+        android:layout_alignStart="@+id/login" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/google"
+        android:src="@drawable/google1"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/register"
+        android:layout_alignEnd="@+id/register" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/usericon"
+            android:layout_below="@+id/imageView"
+            android:src="@drawable/usernamelogo"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/passicon"
+            android:src="@drawable/password"
+            android:layout_alignTop="@+id/password"
+            android:layout_alignLeft="@+id/usericon"
+            android:layout_alignStart="@+id/usericon" />
+    </RelativeLayout>
+</RelativeLayout>

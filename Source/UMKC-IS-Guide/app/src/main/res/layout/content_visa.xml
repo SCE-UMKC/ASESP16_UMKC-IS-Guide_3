@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="6dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="6dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mnpw3d.umkcis_guide.VisaActivity"
+    tools:showIn="@layout/activity_visa">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="#DDDDDDFF">
+
+        <TextView
+            android:id="@+id/txt_Visa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="VISA"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#4668c7"
+            android:textSize="35dp" />
+
+        <ImageView
+            android:id="@+id/img_Visa"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/txt_Visa"
+            android:layout_marginTop="30dp"
+            android:layout_toLeftOf="@+id/txt_Visa"
+            android:layout_toStartOf="@+id/txt_Visa"
+            android:src="@drawable/visa1" />
+
+        <TextView
+            android:id="@+id/txtApplication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/txtVisaDetails"
+            android:layout_marginTop="30dp"
+            android:text="> Application"
+            android:textColor="#4668c7"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/txt_AppContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/txtApplication"
+            android:text="Student needs to pay $200 for Sevis Fee and fill up the DS-160 form. After the Application, Appointment needs to be scheduled. "
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txtVisaDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/img_Visa"
+            android:text="After a college, university, or English language school has accepted you for admission to full-time study, the school will send you a document called an I-20 form, which is the application for an F-1 visa."
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txtDocumentation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_AppContent"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:text="> Documentation"
+            android:textColor="#4668c7"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/txtDocContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/txtDocumentation"
+            android:text="Passport, Original I-20, Sevis fee receipt, financial statements, degree certificates, transcripts."
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=">Visa Interview"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/txtVisa"
+            android:layout_below="@+id/txtDocContent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp"
+            android:textColor="#4668c7"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="
+•	Be specific when you answer questions
+•	Bring bank statements or proof of employment
+•	Provide details of your study plans
+•	Stay calm and be professional
+•	Tell the truth
+"
+            android:id="@+id/txtInterviewDetail"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/txtVisa"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentStart="true"
+            android:textColor="#000000"/>
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>
