@@ -1,0 +1,75 @@
+{
+  "project_info": {
+    "project_id": "umkcisguide",
+    "project_number": "1013659409954",
+    "name": "umkcisguide"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013659409954:android:3d35410c7230669b",
+        "client_id": "android:mnpw3d.umkcis_guide",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "mnpw3d.umkcis_guide",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013659409954:android:0abe3bdc32e28e00",
+        "client_id": "android:com.mnpw3d.umkcis_guide",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.mnpw3d.umkcis_guide",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

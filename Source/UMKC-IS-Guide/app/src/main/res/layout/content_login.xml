@@ -15,7 +15,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#DDDDDDFF"
+        android:background="#ADFFFFFF"
         >
 
     <ImageView
@@ -55,76 +55,63 @@
         android:layout_marginLeft="5dp"
        />
 
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password"
+            android:id="@+id/forget"
+            android:textSize="15dp"
+            android:onClick="forget"
+            android:textColor="#4668c7"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/password"
+            android:layout_centerHorizontal="true" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
-        android:background="#4668c7"
+        android:background="@drawable/roundcorner"
         android:id="@+id/login"
         android:textColor="#ffffff"
+        android:ems="8"
         android:layout_centerVertical="true"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/password"
+        android:layout_marginTop="25dp"
+        android:onClick="login"
+        android:layout_below="@+id/forget"
         android:layout_alignLeft="@+id/password"
         android:layout_alignStart="@+id/password"
-        android:layout_toStartOf="@+id/textView"
-        android:layout_toLeftOf="@+id/textView" />
-
+       />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Register"
-        android:background="#DDDDDDFF"
-        android:textColor="#4668c7"
+        android:background="@drawable/roundcorner"
+        android:textColor="#ffffff"
         android:id="@+id/register"
+        android:ems="8"
         android:layout_below="@+id/password"
         android:layout_alignTop="@+id/login"
         android:layout_alignRight="@+id/password"
         android:layout_alignEnd="@+id/password"
-        android:layout_toEndOf="@+id/twitter"
-        android:layout_toRightOf="@+id/twitter"
         android:onClick="register"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="OR"
-        android:id="@+id/textView"
-        android:textSize="25dp"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/login"
-        android:layout_centerHorizontal="true" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/twitter"
-        android:src="@drawable/twitter"
-        android:layout_marginTop="25dp"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/facebook"
-        android:src="@drawable/facebook1"
-        android:layout_marginTop="25dp"
-        android:layout_below="@+id/textView"
-        android:layout_alignLeft="@+id/login"
-        android:layout_alignStart="@+id/login" />
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/login"
+            android:layout_alignStart="@+id/login"
+            android:layout_below="@id/login"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp"/>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/google"
-        android:src="@drawable/google1"
-        android:layout_marginTop="25dp"
-        android:layout_below="@+id/textView"
-        android:layout_alignRight="@+id/register"
-        android:layout_alignEnd="@+id/register" />
 
-        <ImageView
+                <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/usericon"

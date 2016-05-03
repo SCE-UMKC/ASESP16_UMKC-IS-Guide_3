@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/background"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mnpw3d.umkcis_guide.ProfileActicity"
+    tools:showIn="@layout/activity_profile_acticity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#ADFFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="35dp"
+            android:textColor="#4668c7"
+            android:id="@+id/txt_Post"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textSize="20dp"
+            android:id="@+id/txt_username"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/txt_Post"
+            android:textColor="#212e77" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="20dp"
+            android:id="@+id/txt_email"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/txt_username"
+            android:textColor="#212e77" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:textSize="20dp"
+            android:id="@+id/txt_firstname"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/txt_email"
+            android:textColor="#212e77" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:textSize="20dp"
+            android:id="@+id/txt_lastname"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/txt_firstname"
+            android:textColor="#212e77" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Progress"
+            android:textSize="35dp"
+            android:layout_below="@+id/txt_lastname"
+            android:textColor="#4668c7"
+            android:id="@+id/txt_Progress"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true" />
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/txt_Progress"
+            android:indeterminate="false"
+            android:max="100"
+            android:minHeight="25dp"
+            android:minWidth="200dp"
+            android:progress="25"
+            android:layout_centerHorizontal="true"
+            android:progressDrawable="@drawable/progreecolor"/>
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="23dp"
+            android:textColor="#212e77"
+            android:layout_below="@+id/progressBar1"/>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundcorner"
+            android:text="Update Progress"
+            android:id="@+id/updateprogress"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="33dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="progressfn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:singleLine="true"
+            android:id="@+id/uname"
+            android:layout_above="@+id/txt_email"
+            android:layout_marginLeft="170dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:singleLine="true"
+            android:id="@+id/email"
+            android:layout_above="@+id/txt_firstname"
+            android:layout_alignLeft="@+id/uname"
+            android:layout_alignStart="@+id/uname" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:id="@+id/fname"
+            android:singleLine="true"
+            android:layout_above="@+id/txt_lastname"
+            android:layout_alignLeft="@+id/lname"
+            android:layout_alignStart="@+id/lname" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:id="@+id/lname"
+            android:singleLine="true"
+            android:layout_alignBottom="@+id/txt_lastname"
+            android:layout_alignLeft="@+id/email"
+            android:layout_alignStart="@+id/email" />
+   </RelativeLayout>
+
+
+</RelativeLayout>
+

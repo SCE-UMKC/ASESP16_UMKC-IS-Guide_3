@@ -2,25 +2,167 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mnpw3d.umkcis_guide">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.mnpw3d.umkcis_guide.permission.C2D_MESSAGE" />
+    <permission
+        android:name="com.mnpw3d.umkcis_guide.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:largeHeap="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
         <activity
             android:name=".LoginActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
             android:name=".registerActivity"
             android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--<intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.HOME" />
+        </intent-filter>-->
+        <activity
+            android:name=".PostDepartureActivity"
+            android:label="@string/title_activity_post_departure"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QuickStartActivity"
+            android:label="@string/title_activity_quick_start"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AccommodationActivity"
+            android:label="@string/title_activity_accommodation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ExaminationActivity"
+            android:label="@string/title_activity_examination"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GREActivity"
+            android:label="@string/title_activity_gre"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TOEFLActivity"
+            android:label="@string/title_activity_toefl"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".IELTSActivity"
+            android:label="@string/title_activity_ielts"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ResourceActivity"
+            android:label="@string/title_activity_resource"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CourseSelectionActivity"
+            android:label="@string/title_activity_course_selection"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UniversityApplicationActivity"
+            android:label="@string/title_activity_university_application"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Visa"
+            android:label="@string/title_activity_visa"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PreDeparture"
+            android:label="@string/title_activity_pre_departure"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Flight"
+            android:label="@string/title_activity_flight"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ShoppingList"
+            android:label="@string/title_activity_shopping_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FeesDetail"
+            android:label="@string/title_activity_fees_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Post"
+            android:label="@string/title_activity_post"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.example.gcm" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".MyGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".RegistrationIntentService"
+            android:exported="false" />
+
+        <activity
+            android:name=".PostListActivity"
+            android:label="@string/title_activity_post_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PostViewActivity"
+            android:label="@string/title_activity_post_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProfileActicity"
+            android:label="@string/title_acticity_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TodoActivity"
+            android:label="@string/title_activity_todo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ForgetPassword"
+            android:label="@string/title_activity_forget_password"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChangePassword"
+            android:label="@string/title_activity_change_password"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

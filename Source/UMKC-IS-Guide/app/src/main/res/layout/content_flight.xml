@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="6dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="6dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mnpw3d.umkcis_guide.Flight"
+    tools:showIn="@layout/activity_flight">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ADFFFFFF">
+
+        <TextView
+            android:id="@+id/txt_Fly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Time to Fly!"
+            android:textColor="#4668c7"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/txt_PortOfEntry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_Fly"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:text="> Port of Entries"
+            android:textColor="#4668c7"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/txt_PortDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/txt_PortOfEntry"
+            android:layout_marginTop="15dp"
+            android:text="Chicago, New York, Dallas, Newark"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txt_Flight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_PortDetails"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:text="> Flight Options"
+            android:textColor="#4668c7"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Air Canada, Air India, British Airways, Etihad, Swiss, American Airlines, Delta Airlines, United Airlines."
+            android:id="@+id/txt_FlightOptions"
+            android:layout_below="@+id/txt_Flight"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=">Booking Options"
+            android:id="@+id/txtBooking"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/txt_FlightOptions"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#4668c7"
+            android:textSize="25dp"
+            android:layout_marginTop="30dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:id="@+id/imageButton"
+            android:src="@drawable/trip"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/imageButton2"
+            android:layout_toLeftOf="@+id/imageButton3"
+            android:layout_toStartOf="@+id/imageButton3" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:id="@+id/imageButton2"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/yatra1"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtBooking"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:id="@+id/imageButton3"
+            android:src="@drawable/exped"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/imageButton2"
+            android:layout_toRightOf="@+id/txt_Flight"
+            android:layout_toEndOf="@+id/txt_Flight"
+            android:layout_marginBottom="20dp"/>
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

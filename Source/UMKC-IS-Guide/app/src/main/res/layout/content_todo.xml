@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="6dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="6dp"
+    android:background="@drawable/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mnpw3d.umkcis_guide.TodoActivity"
+    tools:showIn="@layout/activity_todo">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ADFFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Progress"
+            android:textSize="35dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#4668c7"
+            android:id="@+id/txt_Progress"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I have a valid passport"
+            android:id="@+id/checkpassport"
+            android:textSize="17dp"
+            android:layout_below="@+id/txt_Progress"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="34dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I am done with my shopping"
+            android:id="@+id/checkShopping"
+            android:textSize="17dp"
+            android:layout_below="@+id/checkpassport"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="34dp" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I got my Visa"
+            android:id="@+id/checkVisa"
+            android:textSize="17dp"
+            android:layout_below="@+id/checkShopping"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="34dp" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I got my I20"
+            android:id="@+id/checkI20"
+            android:textSize="17dp"
+            android:layout_below="@+id/checkVisa"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="34dp" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I gave my GRE"
+            android:id="@+id/checkGre"
+            android:textSize="17dp"
+            android:layout_below="@+id/checkI20"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="34dp" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I gave my TOEFL/IELTS"
+            android:id="@+id/checkToefl"
+            android:textSize="17dp"
+            android:layout_below="@+id/checkGre"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="34dp" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I applied for the University"
+            android:id="@+id/checkApply"
+            android:textSize="17dp"
+            android:layout_below="@+id/checkToefl"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="34dp" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I know how to fund for my Studies"
+            android:id="@+id/checkFunds"
+            android:textSize="17dp"
+            android:layout_below="@+id/checkApply"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="34dp" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I book my Flight"
+            android:id="@+id/checkFlight"
+            android:textSize="17dp"
+            android:layout_below="@+id/checkFunds"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="34dp" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I have accomodation"
+            android:id="@+id/checkAcco"
+            android:textSize="17dp"
+            android:layout_below="@+id/checkFlight"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="34dp" />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundcorner"
+            android:text="Update Progress"
+            android:id="@+id/updateprogress"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/checkAcco"
+            android:layout_marginTop="33dp"
+            android:layout_marginBottom="33dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="progressfn"/>
+
+
+
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -12,11 +12,14 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.mnpw3d.umkcis_guide.registerActivity"
     tools:showIn="@layout/activity_register">
-
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#DDDDDDFF"
+        android:background="#ADFFFFFF"
         >
 
 
@@ -93,7 +96,7 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="textPostalAddress"
+            android:inputType="textPassword"
             android:hint="Confirm Password"
             android:ems="14"
             android:id="@+id/cpassword"
@@ -185,5 +188,5 @@
             android:layout_alignParentStart="true"/>
 
         </RelativeLayout>
-
+</ScrollView>
 </RelativeLayout>
